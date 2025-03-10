@@ -1,0 +1,16 @@
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\bin\Debug\net5.0\RefatorandoComCleanCode.exe
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\bin\Debug\net5.0\RefatorandoComCleanCode.deps.json
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\bin\Debug\net5.0\RefatorandoComCleanCode.runtimeconfig.json
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\bin\Debug\net5.0\RefatorandoComCleanCode.runtimeconfig.dev.json
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\bin\Debug\net5.0\RefatorandoComCleanCode.dll
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\bin\Debug\net5.0\ref\RefatorandoComCleanCode.dll
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\bin\Debug\net5.0\RefatorandoComCleanCode.pdb
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\obj\Debug\net5.0\RefatorandoComCleanCode.csproj.AssemblyReference.cache
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\obj\Debug\net5.0\RefatorandoComCleanCode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\obj\Debug\net5.0\RefatorandoComCleanCode.AssemblyInfoInputs.cache
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\obj\Debug\net5.0\RefatorandoComCleanCode.AssemblyInfo.cs
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\obj\Debug\net5.0\RefatorandoComCleanCode.csproj.CoreCompileInputs.cache
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\obj\Debug\net5.0\RefatorandoComCleanCode.dll
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\obj\Debug\net5.0\ref\RefatorandoComCleanCode.dll
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\obj\Debug\net5.0\RefatorandoComCleanCode.pdb
+C:\Users\HiagorVieira\source\repos\RefatorandoComCleanCode\RefatorandoComCleanCode\obj\Debug\net5.0\RefatorandoComCleanCode.genruntimeconfig.cache

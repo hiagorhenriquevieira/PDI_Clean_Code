@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="AplicacoesCleanCode\Classes\" />
+    <Folder Include="AplicacoesCleanCode\CodigoLimpoESimples\" />
+    <Folder Include="AplicacoesCleanCode\Concorrencia\" />
+    <Folder Include="AplicacoesCleanCode\HeuristicasEObservacoes\" />
+    <Folder Include="AplicacoesCleanCode\Limites\" />
+    <Folder Include="AplicacoesCleanCode\Sistemas\" />
+    <Folder Include="AplicacoesCleanCode\TestesUnitarios\" />
+    <Folder Include="AplicacoesCleanCode\TratamentoDeErros\" />
+    <Folder Include="AplicacoesCleanCode\ObjetosEEstruturasDeDados\" />
+    <Folder Include="Original\Limites\" />
+    <Folder Include="Original\Classes\" />
+    <Folder Include="Original\CodigoLimpoESimples\" />
+    <Folder Include="Original\Concorrencia\" />
+    <Folder Include="Original\HeuristicasEObservacoes\" />
+    <Folder Include="Original\Sistemas\" />
+    <Folder Include="Original\TestesUnitarios\" />
+    <Folder Include="Original\TratamentoDeErros\" />
+    <Folder Include="Original\ObjetosEEstruturasDeDados\" />
+  </ItemGroup>
+
+</Project>
