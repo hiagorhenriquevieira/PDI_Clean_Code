@@ -23,6 +23,7 @@ O primeiro capítulo do livro Clean Code destaca a importância de escrever cód
 - Menos é mais → Um código limpo tende a ser mais enxuto e direto ao ponto.
 - Facilidade de manutenção → Um código bem escrito reduz o esforço para corrigir bugs e adicionar novas funcionalidades.
 - Código sujo custa caro → A falta de organização e clareza aumenta o tempo de desenvolvimento e manutenção.
+  
 📌 Exemplo prático no repositório:
-No diretório Original dentro da pasta CodigoLimpo, você encontrará exemplos comparando código sujo e no diretório AplicacoesCleanCode dentro da pasta CodigoLimpo, você encontrará o exemplo com código limpo, mostrando boas práticas na nomeação de variáveis e organização do código.
+- No diretório Original dentro da pasta CodigoLimpo, você encontrará exemplos comparando código sujo e no diretório AplicacoesCleanCode dentro da pasta CodigoLimpo, você encontrará o exemplo com código limpo, mostrando boas práticas na nomeação de variáveis e organização do código.
 
