@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HiagorVieira\\source\\repos\\RefatorandoComCleanCode\\RefatorandoComCleanCode\\RefatorandoComCleanCode.csproj",
+      "projectUniqueName": "C:\\Users\\HiagorVieira\\source\\repos\\PDI_CleanCode\\RefatorandoComCleanCode\\RefatorandoComCleanCode.csproj",
       "projectName": "RefatorandoComCleanCode",
-      "projectPath": "C:\\Users\\HiagorVieira\\source\\repos\\RefatorandoComCleanCode\\RefatorandoComCleanCode\\RefatorandoComCleanCode.csproj",
+      "projectPath": "C:\\Users\\HiagorVieira\\source\\repos\\PDI_CleanCode\\RefatorandoComCleanCode\\RefatorandoComCleanCode.csproj",
       "packagesPath": "C:\\Users\\HiagorVieira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HiagorVieira\\source\\repos\\RefatorandoComCleanCode\\RefatorandoComCleanCode\\obj\\",
+      "outputPath": "C:\\Users\\HiagorVieira\\source\\repos\\PDI_CleanCode\\RefatorandoComCleanCode\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HiagorVieira\\AppData\\Roaming\\NuGet\\NuGet.Config",
