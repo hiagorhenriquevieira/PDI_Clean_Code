@@ -33,20 +33,27 @@ Cada diretório representa um capítulo do livro e contém exemplos comentados p
 
 🛠️ Principais conceitos do capítulo:
 - Evite abreviações e nomes genéricos → Use nomes que expressem claramente o propósito da variável ou função.
+  
 ❌ int d; (o que significa "d"?)
+
 ✅ int diasDesdeUltimaCompra; (muito mais claro!)
 
 - Seja específico → Nomes vagos podem gerar confusão. Prefira termos que transmitam exatamente a intenção do código.
+  
 ❌ getData()
+
 ✅ getDataNascimentoCliente()
 
 - Evite informações desnecessárias → Não repita palavras sem necessidade.
+  
 ❌ ClienteInfo (se já está em um contexto de cliente, "Info" é redundante).
+
 ✅ Cliente.
 
 - Use convenções do idioma → Se a equipe trabalha em português, evite misturar inglês e português nos nomes.
 
 - Nomes de métodos devem indicar ações → Métodos devem ter nomes que expressem suas ações claramente.
+
 ✅ calcularDesconto() ao invés de desconto()
 
 📌 Exemplo prático no repositório:
