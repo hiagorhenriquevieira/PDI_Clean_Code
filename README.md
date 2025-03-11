@@ -12,7 +12,7 @@ O repositório pode ser útil para:
 - Equipes que buscam adotar padrões mais limpos em seus projetos.
 
 Cada diretório representa um capítulo do livro e contém exemplos comentados para facilitar o aprendizado.
-
+---------------
 <h2>Resumo do Capítulo 1 – Limpeza de Código (Clean Code)</h2>
 
 - O primeiro capítulo do livro Clean Code destaca a importância de escrever código limpo e sustentável. Uncle Bob enfatiza que um código bem escrito não é apenas para ser entendido pelo computador, mas principalmente por outros desenvolvedores.
@@ -26,7 +26,7 @@ Cada diretório representa um capítulo do livro e contém exemplos comentados p
   
 📌 Exemplo prático no repositório:
 - No diretório CodigoLimpo, dentro da pasta Original, você encontrará exemplos do código desorganizado. Já no diretório CodigoLimpo, dentro da pasta AplicacoesCleanCode, estão os mesmos exemplos, porém aplicando boas práticas, como nomeação adequada de variáveis e melhor organização do código, seguindo os princípios do Clean Code.
-
+------------
 <h2>Resumo do Capítulo 2 – Nomes Significativos</h2>
 
 - No segundo capítulo de Clean Code, Uncle Bob enfatiza a importância de escolher nomes descritivos e significativos para variáveis, funções, classes e demais elementos do código. Nomes bem escolhidos tornam o código autoexplicativo e facilitam sua manutenção.
@@ -58,3 +58,33 @@ Cada diretório representa um capítulo do livro e contém exemplos comentados p
 
 📌 Exemplo prático no repositório:
 - No diretório NomesSignificativos, dentro da pasta Original, você encontrará exemplos do código desorganizado. Já no diretório NomesSignificativos, dentro da pasta AplicacoesCleanCode, estão os mesmos exemplos, porém aplicando boas práticas, como nomeação adequada de variáveis e melhor organização do código, seguindo os princípios do Clean Code.
+------------
+<h2>Resumo do Capítulo 3 – Funções</h2>
+
+- No terceiro capítulo de Clean Code, Uncle Bob explora como escrever funções bem estruturadas que sejam curtas, coesas e fáceis de entender. A ideia principal é que uma boa função deve fazer apenas uma coisa e fazê-la bem.
+
+🛠️ Principais conceitos do capítulo:
+- Funções devem ser pequenas → Quanto menor e mais objetiva, melhor! Se possível, cada função deve ter no máximo 4 a 5 linhas.
+
+❌ Uma função gigantesca com várias responsabilidades.
+
+✅ Funções curtas e específicas, cada uma com um propósito claro.
+- O nome da função deve expressar sua intenção → Um nome bem escolhido elimina a necessidade de comentários extras.
+
+❌ Processar() (processar o quê?)
+
+✅ calcularFreteParaCliente()
+- Uma função deve fazer apenas uma coisa → Se precisar adicionar a palavra "e" para explicar o que a função faz, provavelmente ela tem múltiplas responsabilidades e precisa ser dividida.
+
+❌ validarPedidoEEnviarEmail()
+
+✅ validarPedido() e enviarEmailDeConfirmacao()
+- Evite muitos parâmetros → O ideal é que uma função tenha no máximo 2 ou 3 parâmetros. Se precisar de mais, considere agrupar os dados em um objeto.
+
+❌ processarPagamento(idUsuario, valor, desconto, tipoPagamento, parcela, dataVencimento)
+
+✅ processarPagamento(pedido)
+- Sem efeitos colaterais → Uma função não deve modificar variáveis externas inesperadamente.
+
+📌 Exemplo prático no repositório:
+- No diretório Funcoes, dentro da pasta Original, você encontrará exemplos do código desorganizado. Já no diretório Funcoes, dentro da pasta AplicacoesCleanCode, estão os mesmos exemplos, porém aplicando boas práticas, como nomeação adequada de variáveis e melhor organização do código, seguindo os princípios do Clean Code.
