@@ -15,7 +15,7 @@ Cada diretório representa um capítulo do livro e contém exemplos comentados p
 
 <h2>Resumo do Capítulo 1 – Limpeza de Código (Clean Code)</h2>
 
-O primeiro capítulo do livro Clean Code destaca a importância de escrever código limpo e sustentável. Uncle Bob enfatiza que um código bem escrito não é apenas para ser entendido pelo computador, mas principalmente por outros desenvolvedores.
+- O primeiro capítulo do livro Clean Code destaca a importância de escrever código limpo e sustentável. Uncle Bob enfatiza que um código bem escrito não é apenas para ser entendido pelo computador, mas principalmente por outros desenvolvedores.
 
 🛠️ Principais conceitos do capítulo:
 - Código limpo é legível e elegante → Deve ser fácil de entender, sem necessidade de explicações extras.
@@ -25,5 +25,29 @@ O primeiro capítulo do livro Clean Code destaca a importância de escrever cód
 - Código sujo custa caro → A falta de organização e clareza aumenta o tempo de desenvolvimento e manutenção.
   
 📌 Exemplo prático no repositório:
-- No diretório Original dentro da pasta CodigoLimpo, você encontrará exemplos comparando código sujo e no diretório AplicacoesCleanCode dentro da pasta CodigoLimpo, você encontrará o exemplo com código limpo, mostrando boas práticas na nomeação de variáveis e organização do código.
+- No diretório CodigoLimpo, dentro da pasta Original, você encontrará exemplos do código desorganizado. Já no diretório CodigoLimpo, dentro da pasta AplicacoesCleanCode, estão os mesmos exemplos, porém aplicando boas práticas, como nomeação adequada de variáveis e melhor organização do código, seguindo os princípios do Clean Code.
 
+<h2>Resumo do Capítulo 2 – Nomes Significativos</h2>
+
+- No segundo capítulo de Clean Code, Uncle Bob enfatiza a importância de escolher nomes descritivos e significativos para variáveis, funções, classes e demais elementos do código. Nomes bem escolhidos tornam o código autoexplicativo e facilitam sua manutenção.
+
+🛠️ Principais conceitos do capítulo:
+- Evite abreviações e nomes genéricos → Use nomes que expressem claramente o propósito da variável ou função.
+❌ int d; (o que significa "d"?)
+✅ int diasDesdeUltimaCompra; (muito mais claro!)
+
+- Seja específico → Nomes vagos podem gerar confusão. Prefira termos que transmitam exatamente a intenção do código.
+❌ getData()
+✅ getDataNascimentoCliente()
+
+- Evite informações desnecessárias → Não repita palavras sem necessidade.
+❌ ClienteInfo (se já está em um contexto de cliente, "Info" é redundante).
+✅ Cliente.
+
+- Use convenções do idioma → Se a equipe trabalha em português, evite misturar inglês e português nos nomes.
+
+- Nomes de métodos devem indicar ações → Métodos devem ter nomes que expressem suas ações claramente.
+✅ calcularDesconto() ao invés de desconto()
+
+📌 Exemplo prático no repositório:
+No diretório NomesSignificativos, dentro da pasta Original, você encontrará exemplos do código desorganizado. Já no diretório NomesSignificativos, dentro da pasta AplicacoesCleanCode, estão os mesmos exemplos, porém aplicando boas práticas, como nomeação adequada de variáveis e melhor organização do código, seguindo os princípios do Clean Code.
