@@ -88,7 +88,7 @@ Cada diretório representa um capítulo do livro e contém exemplos comentados p
 
 📌 Exemplo prático no repositório:
 - No diretório Funcoes, dentro da pasta Original, você encontrará exemplos do código desorganizado. Já no diretório Funcoes, dentro da pasta AplicacoesCleanCode, estão os mesmos exemplos, porém aplicando boas práticas, como nomeação adequada de variáveis e melhor organização do código, seguindo os princípios do Clean Code.
-
+------------------------
 <h2>Resumo do Capítulo 4 – Comentários</h2>
 
 - No quarto capítulo de Clean Code, Uncle Bob discute o papel dos comentários no código. Embora possam ser úteis, eles muitas vezes são mal utilizados, servindo como um "remendo" para um código ruim em vez de torná-lo realmente compreensível. O objetivo deve ser escrever um código tão claro que os comentários se tornem desnecessários.
@@ -119,3 +119,31 @@ int s = 0; for (Item i : pedido.getItens()) s += i.getQtd();
 
 📌 Exemplo prático no repositório:
 - No diretório Comentarios, há exemplos mostrando como substituir comentários desnecessários por código mais legível e boas práticas no uso de comentários úteis.
+----------------------------
+<h2>Resumo do Capítulo 5 – Formatação</h2>
+
+No quinto capítulo de Clean Code, Uncle Bob trata da importância da formatação para tornar o código mais legível e compreensível. A forma como o código é organizado visualmente influencia diretamente na facilidade de leitura e entendimento por parte de outros desenvolvedores.
+
+🛠️ Principais conceitos do capítulo:
+- Código limpo é código bem organizado visualmente → O espaçamento, as quebras de linha, a indentação e a separação por blocos lógicos ajudam o leitor a entender a estrutura do código com rapidez.
+
+- Agrupe conceitos relacionados juntos → Métodos que operam sobre os mesmos dados ou estão logicamente ligados devem estar próximos uns dos outros no código.
+
+✅ Colocar getNome() e setNome() um abaixo do outro em uma classe Cliente, por exemplo.
+
+- Mantenha uma organização vertical clara
+
+- De cima para baixo, o código deve contar uma história clara: primeiro variáveis, depois construtores, métodos públicos e privados, etc.
+
+- Evite "pular" entre assuntos que não se relacionam.
+
+- Mantenha a densidade horizontal equilibrada
+
+- Não "esprema" muito código em uma linha.
+
+- Linhas curtas e com propósito único → Prefira declarações simples por linha, em vez de agrupar várias instruções.
+
+- Consistência é mais importante do que estilo → Use uma convenção de formatação e mantenha-a consistente em todo o projeto.
+
+📌 Exemplo prático no repositório:
+No diretório Formatacao, você encontrará exemplos de códigos mal formatados e sua refatoração com melhor organização, clareza e estrutura visual.
