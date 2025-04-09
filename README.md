@@ -88,3 +88,34 @@ Cada diretório representa um capítulo do livro e contém exemplos comentados p
 
 📌 Exemplo prático no repositório:
 - No diretório Funcoes, dentro da pasta Original, você encontrará exemplos do código desorganizado. Já no diretório Funcoes, dentro da pasta AplicacoesCleanCode, estão os mesmos exemplos, porém aplicando boas práticas, como nomeação adequada de variáveis e melhor organização do código, seguindo os princípios do Clean Code.
+
+<h2>Resumo do Capítulo 4 – Comentários</h2>
+
+- No quarto capítulo de Clean Code, Uncle Bob discute o papel dos comentários no código. Embora possam ser úteis, eles muitas vezes são mal utilizados, servindo como um "remendo" para um código ruim em vez de torná-lo realmente compreensível. O objetivo deve ser escrever um código tão claro que os comentários se tornem desnecessários.
+
+🛠️ Principais conceitos do capítulo:
+- Código limpo reduz a necessidade de comentários → Se você sente que precisa explicar seu código com um comentário, talvez seja melhor reescrevê-lo para torná-lo mais legível.
+
+❌ // Soma o total de produtos do pedido
+int s = 0; for (Item i : pedido.getItens()) s += i.getQtd();
+
+✅ int totalProdutos = pedido.calcularTotalItens(); (o nome do método já explica tudo!)
+
+- Evite comentários redundantes → Se um comentário apenas repete o que já está claro no código, ele é inútil.
+
+❌ int idade = 25; // A variável idade armazena a idade do usuário
+
+✅ int idadeUsuario = 25;
+
+- Comentários podem se tornar desatualizados → Com o tempo, um código pode mudar, mas os comentários podem não ser atualizados, levando a informações incorretas.
+
+- Quando os comentários são aceitáveis?
+  
+✅ Explicações sobre decisões complexas que não são óbvias no código.
+  
+✅ Documentação de APIs públicas.
+
+✅ TODOs e anotações sobre melhorias futuras.
+
+📌 Exemplo prático no repositório:
+- No diretório Comentarios, há exemplos mostrando como substituir comentários desnecessários por código mais legível e boas práticas no uso de comentários úteis.
