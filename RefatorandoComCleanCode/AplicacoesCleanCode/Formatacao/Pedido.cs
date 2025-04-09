@@ -2,8 +2,6 @@
 {
     public class Pedido
     {
-        private string cliente;
-
         public Pedido(int id, string cliente, decimal valor, bool pago)
         {
             Id = id;

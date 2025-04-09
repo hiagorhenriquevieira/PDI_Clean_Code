@@ -17,7 +17,6 @@ namespace RefatorandoComCleanCode
 
             NomesSignificativos();
 
-
         }
 
         private static void NomesSignificativos()
@@ -27,8 +26,6 @@ namespace RefatorandoComCleanCode
             MetodoSemNomesSignificativos();
             Console.WriteLine();
             MetodoComNomesSignificativos();
-
-
         }
 
         private static void MetodoSemNomesSignificativos()
@@ -47,8 +44,6 @@ namespace RefatorandoComCleanCode
             {
                 Console.WriteLine("Funcionario não tem acesso as informações gerais.");
             }
-
-
         }
 
         private static void MetodoComNomesSignificativos()

@@ -14,7 +14,6 @@
     <Folder Include="AplicacoesCleanCode\Sistemas\" />
     <Folder Include="AplicacoesCleanCode\TestesUnitarios\" />
     <Folder Include="AplicacoesCleanCode\TratamentoDeErros\" />
-    <Folder Include="AplicacoesCleanCode\ObjetosEEstruturasDeDados\" />
     <Folder Include="Original\Limites\" />
     <Folder Include="Original\Classes\" />
     <Folder Include="Original\CodigoLimpoESimples\" />
@@ -23,7 +22,10 @@
     <Folder Include="Original\Sistemas\" />
     <Folder Include="Original\TestesUnitarios\" />
     <Folder Include="Original\TratamentoDeErros\" />
-    <Folder Include="Original\ObjetosEEstruturasDeDados\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flunt.Extensions.Br" Version="1.0.1" />
   </ItemGroup>
 
 </Project>
