@@ -6,12 +6,6 @@ namespace RefatorandoComCleanCode.AplicacoesCleanCode.Funcoes
     {
         public void ProcessarPedido(Pedido pedidoCompra)
         {
-            if (!pedidoCompra.Validar())
-            {
-                Console.WriteLine($"Não é possível processar o pedido {pedidoCompra.Id}. Verifique todos os campos e tente novamente.");
-                return;
-            }
-
             var retornoPedido = RealizarEnvioPedido(pedidoCompra);
 
             if (!retornoPedido)
@@ -20,9 +14,9 @@ namespace RefatorandoComCleanCode.AplicacoesCleanCode.Funcoes
                 return;
             }
 
-                Console.WriteLine($"O pedido {pedidoCompra.Id} foi realizado.");
+            Console.WriteLine($"O pedido {pedidoCompra.Id} foi realizado.");
 
-                RealizarDespacho(pedidoCompra);
+            RealizarDespacho(pedidoCompra);
         }
 
         private void RealizarDespacho(Pedido pedidoCompra)
@@ -30,12 +24,10 @@ namespace RefatorandoComCleanCode.AplicacoesCleanCode.Funcoes
             switch (pedidoCompra.TipoEntrega)
             {
                 case ECategoriaEntrega.Expresso:
-                    //DespachoEntregaExpressa
                     Console.WriteLine("Entrega expressa selecionada.");
                     break;
 
                 default:
-                    //DespachoEntregaPadrao
                     Console.WriteLine("Entrega padrão selecionada.");
                     break;
             }
@@ -43,8 +35,7 @@ namespace RefatorandoComCleanCode.AplicacoesCleanCode.Funcoes
 
         private bool RealizarEnvioPedido(Pedido pedidoCompra)
         {
-            //-- envio do pedido
-           return pedidoCompra.Pago;
+            return pedidoCompra.Pago;
         }
     }
 }

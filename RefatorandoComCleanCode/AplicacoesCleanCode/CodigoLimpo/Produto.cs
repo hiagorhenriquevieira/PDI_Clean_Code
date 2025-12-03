@@ -6,6 +6,8 @@ namespace RefatorandoComCleanCode.AplicacoesCleanCode.CodigoLimpo
     {
         public Produto(string nome, decimal preco, int quantidade)
         {
+            VerificarInformacoes(nome, preco, quantidade);
+
             Nome = nome;
             Preco = preco;
             Quantidade = quantidade;
@@ -16,15 +18,15 @@ namespace RefatorandoComCleanCode.AplicacoesCleanCode.CodigoLimpo
         public int Quantidade { get; private set; }
         public decimal Total => Preco * Quantidade;
 
-        public void VerificarInformacoes()
+        private void VerificarInformacoes(string nome, decimal preco, int quantidade)
         {
-            if (string.IsNullOrEmpty(Nome))
+            if (string.IsNullOrEmpty(nome))
                 throw new ArgumentException("Produto inválido. Verifique os dados.");
             
-            if (Preco <= 0)
+            if (preco <= 0)
                 throw new ArgumentException("Produto inválido. Verifique os dados.");
          
-            if (Quantidade <= 0)
+            if (quantidade <= 0)
                 throw new ArgumentException("Produto inválido. Verifique os dados.");
         }
     }

@@ -1,30 +1,30 @@
-﻿using Flunt.Notifications;
-using Flunt.Validations;
-using System.Linq;
+﻿using System;
 
 namespace RefatorandoComCleanCode.AplicacoesCleanCode.ObjetosEEstruturasDeDados
 {
-    public class Pedido : Notifiable<Notification>
+    public class Pedido
     {
-        public Pedido(int id, string cliente, decimal valor, bool pago)
+        public Pedido(int idPedido, string nomeCliente, decimal valor, bool pago)
         {
-            IdPedido = id;
-            NomeCliente = cliente;
+
+            if (string.IsNullOrEmpty(nomeCliente))
+            {
+                throw new Exception("Nome do cliente não foi preenchido corretamente.");
+            }
+            if (!pago)
+            {
+                throw new Exception($"O pedido {idPedido} do cliente {nomeCliente} ainda não foi pago.");
+            }
+
+            IdPedido = idPedido;
+            NomeCliente = nomeCliente;
             Valor = valor;
             Pago = pago;
         }
 
         public readonly int IdPedido;
-        private string NomeCliente { get; set; }
-        private decimal Valor { get; set; }
-        private bool Pago { get; set; }
-
-        public bool Validar()
-        {
-            AddNotifications(new Contract<Notification>().IsNullOrWhiteSpace(NomeCliente, "Nome do cliente não foi preenchido corretamente."));
-            AddNotifications(new Contract<Notification>().IsFalse(Pago, $"O pedido {IdPedido} do cliente {NomeCliente} ainda não foi pago."));
-
-            return !Notifications.Any();
-        }
+        public string NomeCliente { get; private set; }
+        public decimal Valor { get; private set; }
+        public bool Pago { get; private set; }
     }
 }
