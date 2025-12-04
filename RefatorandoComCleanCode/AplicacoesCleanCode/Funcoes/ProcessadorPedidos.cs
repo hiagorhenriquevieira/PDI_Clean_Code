@@ -19,7 +19,7 @@ namespace RefatorandoComCleanCode.AplicacoesCleanCode.Funcoes
             RealizarDespacho(pedidoCompra);
         }
 
-        private void RealizarDespacho(Pedido pedidoCompra)
+        private static void RealizarDespacho(Pedido pedidoCompra)
         {
             switch (pedidoCompra.TipoEntrega)
             {
@@ -33,7 +33,7 @@ namespace RefatorandoComCleanCode.AplicacoesCleanCode.Funcoes
             }
         }
 
-        private bool RealizarEnvioPedido(Pedido pedidoCompra)
+        private static bool RealizarEnvioPedido(Pedido pedidoCompra)
         {
             return pedidoCompra.Pago;
         }

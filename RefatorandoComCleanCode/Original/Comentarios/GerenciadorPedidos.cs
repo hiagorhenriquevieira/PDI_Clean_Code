@@ -9,12 +9,12 @@ namespace RefatorandoComCleanCode.Original.Comentarios
         private List<Pedido> pedidos = new List<Pedido>();
 
         // Método que adiciona um novo pedido à lista
-        public void AdicionarPedido(int id, string cliente, decimal valor, bool pago)
+        public void AddPedido(int id, string cliente, decimal valor, bool pago)
         {
             // Cria um novo pedido
             Pedido p = new Pedido();
             p.Id = id; // Definindo o ID do pedido
-            p.NomeCliente = cliente; // Definindo o nome do cliente
+            p.Cliente = cliente; // Definindo o nome do cliente
             p.Valor = valor; // Definindo o valor do pedido
             p.Pago = pago; // Definindo se o pedido foi pago
 
@@ -23,7 +23,7 @@ namespace RefatorandoComCleanCode.Original.Comentarios
         }
 
         // Método que verifica se o pedido foi pago
-        public void VerificarPagamento(int id)
+        public void Pagamento(int id)
         {
             foreach (var pedido in pedidos)
             {

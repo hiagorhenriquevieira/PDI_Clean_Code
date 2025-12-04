@@ -6,7 +6,6 @@ namespace RefatorandoComCleanCode.AplicacoesCleanCode.ObjetosEEstruturasDeDados
     {
         public Pedido(int idPedido, string nomeCliente, decimal valor, bool pago)
         {
-
             if (string.IsNullOrEmpty(nomeCliente))
             {
                 throw new Exception("Nome do cliente não foi preenchido corretamente.");

@@ -5,11 +5,11 @@ namespace RefatorandoComCleanCode.AplicacoesCleanCode.Comentarios
 {
     public class GerenciadorPedidos
     {
-        private List<Pedido> _pedidos = new List<Pedido>();
+        private List<Pedido> _pedidos = new();
 
-        public void AdicionarPedido(int id, string cliente, decimal valor, bool pago)
+        public void AdicionarPedido(int idPedido, string nomeCliente, decimal valorVenda, bool pagamentoEfetivado)
         {
-            Pedido novoPedido = new(id,cliente,valor,pago);
+            Pedido novoPedido = new(idPedido, nomeCliente, valorVenda,  pagamentoEfetivado);
 
             _pedidos.Add(novoPedido);
         }
@@ -18,9 +18,9 @@ namespace RefatorandoComCleanCode.AplicacoesCleanCode.Comentarios
         {
             foreach (var pedido in _pedidos)
             {
-                if (pedido.Id == idPedidoSelecionado)
+                if (pedido.IdPedido == idPedidoSelecionado)
                 {
-                    if (pedido.Pago)
+                    if (pedido.PagamentoEfetivado)
                     {
                         Console.WriteLine("Pedido pago.");
                     }

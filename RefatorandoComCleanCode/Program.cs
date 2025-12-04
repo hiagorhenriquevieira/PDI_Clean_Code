@@ -1,9 +1,4 @@
-﻿using RefatorandoComCleanCode.AplicacoesCleanCode.CodigoLimpo;
-using RefatorandoComCleanCode.AplicacoesCleanCode.Funcoes;
-using RefatorandoComCleanCode.AplicacoesCleanCode.NomesSignificativos;
-using RefatorandoComCleanCode.Original.CodigoLimpo;
-using RefatorandoComCleanCode.Original.NomesSignificativos;
-using System;
+﻿using System;
 
 namespace RefatorandoComCleanCode
 {
@@ -13,28 +8,24 @@ namespace RefatorandoComCleanCode
         {
             CapituloCodigoLimpo();
 
-            Console.WriteLine("---------------------------------------------------");
-
             CapituloNomesSignificativos();
 
-            Console.WriteLine("---------------------------------------------------");
-
             CapituloFuncoes();
+
+            CapituloComentarios();
         }
 
+        #region CodigoLimpo
         private static void CapituloCodigoLimpo()
         {
-            Console.WriteLine("Código Limpo -------");
-
             MetodoSemCodigoLimpo();
-            Console.WriteLine("");
+
             MetodoComCodigoLimpo();
         }
 
         private static void MetodoSemCodigoLimpo()
         {
-            Console.WriteLine("Exemplo 1: Original");
-            var p = new P();
+            var p = new Original.CodigoLimpo.P();
 
             p.A(n: "Anador", p: 10, q: 2);
 
@@ -45,17 +36,13 @@ namespace RefatorandoComCleanCode
         {
             try
             {
-                Console.WriteLine("Exemplo 1: Refatorado");
-                Console.WriteLine("");
+                var vendaProduto = new AplicacoesCleanCode.CodigoLimpo.VendaProduto();
 
-                var vendaProduto = new VendaProduto();
-
-                var produto = new Produto(nome: "Anador", preco: 10, quantidade: 2);
+                var produto = new AplicacoesCleanCode.CodigoLimpo.Produto(nome: "Anador", preco: 10, quantidade: 2);
 
                 vendaProduto.AdicionarProduto(produto);
 
                 Console.WriteLine(vendaProduto.ObterInformacoesDosProdutos());
-
             }
             catch (Exception ex)
             {
@@ -63,18 +50,19 @@ namespace RefatorandoComCleanCode
             }
         }
 
+        #endregion
+
+        #region NomesSignificativos
         private static void CapituloNomesSignificativos()
         {
-            Console.WriteLine("Nomes Significativos -------");
-
             MetodoSemNomesSignificativos();
-            Console.WriteLine();
+
             MetodoComNomesSignificativos();
         }
 
         private static void MetodoSemNomesSignificativos()
         {
-            var u = new U();
+            var u = new Original.NomesSignificativos.U();
 
             u.A("Bartolomeu", 1);
             u.A("Monkey D. Luffy", 2);
@@ -92,11 +80,11 @@ namespace RefatorandoComCleanCode
 
         private static void MetodoComNomesSignificativos()
         {
-            var definicaoDeAcesso = new DefinicaoDeAcesso();
+            var definicaoDeAcesso = new AplicacoesCleanCode.NomesSignificativos.DefinicaoDeAcesso();
 
-            definicaoDeAcesso.AdicionarFuncionario("Bartolomeu", ECargo.Gerente);
-            definicaoDeAcesso.AdicionarFuncionario("Monkey D. Luffy", ECargo.Atendente);
-            definicaoDeAcesso.AdicionarFuncionario("Roronoa Zoro", ECargo.Estagiario);
+            definicaoDeAcesso.AdicionarFuncionario("Bartolomeu", AplicacoesCleanCode.NomesSignificativos.ECargo.Gerente);
+            definicaoDeAcesso.AdicionarFuncionario("Monkey D. Luffy", AplicacoesCleanCode.NomesSignificativos.ECargo.Atendente);
+            definicaoDeAcesso.AdicionarFuncionario("Roronoa Zoro", AplicacoesCleanCode.NomesSignificativos.ECargo.Estagiario);
 
             if (definicaoDeAcesso.ValidarAcessoFuncionario("Bartolomeu"))
             {
@@ -107,14 +95,14 @@ namespace RefatorandoComCleanCode
                 Console.WriteLine("Funcionario não tem acesso as informações gerais.");
             }
         }
+        #endregion
 
+        #region Funcoes
         private static void CapituloFuncoes()
         {
-            Console.WriteLine("Funções -------");
             MetodoExemploFuncoesLegado();
-            Console.WriteLine();
+            
             MetodoExemploFuncoesRefatorado();
-
         }
 
         private static void MetodoExemploFuncoesLegado()
@@ -127,8 +115,8 @@ namespace RefatorandoComCleanCode
         {
             try
             {
-                var processadorDePedido = new ProcessadorPedidos();
-                var pedido = new Pedido(1, "Hiagor", 10, false, "Rua 10, número 1092 centro", ECategoriaEntrega.Padrao);
+                var processadorDePedido = new AplicacoesCleanCode.Funcoes.ProcessadorPedidos();
+                var pedido = new AplicacoesCleanCode.Funcoes.Pedido(1, "Hiagor", 10, false, "Rua 10, número 1092 centro", AplicacoesCleanCode.Funcoes.ECategoriaEntrega.Padrao);
 
                 processadorDePedido.ProcessarPedido(pedido);
             }
@@ -137,5 +125,33 @@ namespace RefatorandoComCleanCode
                 Console.WriteLine($"Não foi possivel processar o pedido.{Environment.NewLine}Mensagem: {ex.Message}");
             }
         }
+        #endregion
+
+        #region Comentarios
+        private static void CapituloComentarios()
+        {
+            MetodoExemploDeCodigoComentado();
+
+            MetodoExemploDeCodigoSemComentario();
+
+        }
+
+        private static void MetodoExemploDeCodigoComentado()
+        {
+            //Criação do gerenciador de pedidos, para a adição individual de cada pedido.
+            var gerenPedido = new Original.Comentarios.GerenciadorPedidos();
+            //Adicionar valores de ID, nome do cliente, valor do pagamento, e se já está pago.
+            gerenPedido.AddPedido(1,"hiagor", 10, true);
+        }
+
+        private static void MetodoExemploDeCodigoSemComentario()
+        {
+            var gerenciadorDePedidos = new AplicacoesCleanCode.Comentarios.GerenciadorPedidos();
+            gerenciadorDePedidos.AdicionarPedido(idPedido: 1, nomeCliente: "Hiagor", valorVenda: 10, pagamentoEfetivado: true);
+
+            gerenciadorDePedidos.VerificarPagamento(1);
+        }
+
+        #endregion
     }
 }

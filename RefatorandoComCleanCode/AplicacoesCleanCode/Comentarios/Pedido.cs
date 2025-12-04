@@ -2,20 +2,18 @@
 {
     public class Pedido
     {
-        private string cliente;
-
-        public Pedido(int id, string cliente, decimal valor, bool pago)
+        public Pedido(int idPedido, string nomeCliente, decimal valorVenda, bool pagamentoEfetivado)
         {
-            Id = id;
-            NomeCliente = cliente;
-            Valor = valor;
-            Pago = pago;
+            IdPedido = idPedido;
+            NomeCliente = nomeCliente;
+            ValorVenda = valorVenda;
+            PagamentoEfetivado = pagamentoEfetivado;
         }
 
-        public int Id { get; set; }
-        public string NomeCliente { get; set; }
-        public decimal Valor { get; set; }
-        public bool Pago { get; set; }
+        public int IdPedido { get; private set; }
+        public string NomeCliente { get; private set; }
+        public decimal ValorVenda { get; private set; }
+        public bool PagamentoEfetivado { get; private set; }
 
     }
 }
